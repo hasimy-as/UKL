@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/Universal/logo-ts.png"
+      sizes="96x96"
+    />
+    <title>Tambah Barang | Admin Inventaris Sarpra MOKLET</title>
+  </head>
+  <body>
+    <% include adminnavbar %>
+
+    <div class="container">
+      <form class="ui form" method="POST" action="auth_barang">
+        <br />
+        <h2 class="ui header text-center">Penambahan Barang Sarpra</h2>
+        <p class="ui dividing header"></p>
+        <br />
+        <div class="two fields">
+          <div class="field">
+            <label for="nama">Nama Barang</label>
+            <input
+              type="text"
+              name="nama_barang"
+              placeholder="Nama barang"
+              required
+            />
+          </div>
+        </div>
+        <div class="five fields">
+          <div class="field">
+            <label for="jumlah_barang">Jumlah barang</label>
+            <input type="number" min="0" name="jumlah_barang" required />
+          </div>
+        </div>
+        <div class="five fields">
+          <div class="field">
+            <label for="jumlah_barang">Jumlah barang tersedia</label>
+            <input type="number" min="0" name="sediaBerapa_barang" required />
+          </div>
+        </div>
+        <input type="hidden" name="status_barang" value="Tersedia" />
+        <br />
+        <input
+          class="ui green button"
+          type="submit"
+          tabindex="0"
+          value="Tambahkan"
+        />
+      </form>
+      <br />
+    </div>
+  </body>
+</html>

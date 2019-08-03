@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ADMIN HOME | Inventaris Sarpra MOKLET</title>
+  </head>
+
+  <body>
+    <div class="top-box top-box-a bg-danger text-light">
+      <h4>Peminjam terbaru:</h4>
+      <p class="number"><%= peminjam.nama_peminjam %></p>
+      <a class="ui inverted button" href="/peminjamadmin">
+        Lihat Peminjam
+      </a>
+    </div>
+    <div class="top-box top-box-b bg-primary text-light">
+      <h4>Status peminjam:</h4>
+      <p class="number"><%= peminjam.verifikasi %></p>
+      <a class="ui inverted button" href="/peminjamadmin">
+        Lihat Selengkapnya
+      </a>
+    </div>
+  </body>
+</html>

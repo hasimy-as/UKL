@@ -1,0 +1,53 @@
+.main-container {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  background: rgba(221, 221, 221, 0.9);
+}
+
+h2,
+h3 {
+  font-weight: bold !important;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.3em !important;
+}
+
+h3:nth-child(odd) {
+  font-size: 1.7em !important;
+}
+
+.main-container h1 {
+  width: 290px;
+  margin: 0 auto 40px;
+  font-weight: bold;
+  padding-top: 50px;
+  text-align: center;
+  border-bottom: 3px solid #000;
+}
+
+.main-container .flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-container .flex .box {
+  width: 20%;
+  padding: 20px;
+  background: #fff;
+  margin: 0 0 50px;
+}
+
+.main-container .flex .box .img-box {
+  position: relative;
+  width: 95%;
+  height: auto;
+  margin: 10px auto;
+}
+
+.main-container .flex .box .img-box img {
+  width: 100%;
+  height: auto;
+}

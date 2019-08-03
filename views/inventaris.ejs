@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inventaris | Inventaris Sarpra MOKLET</title>
+    <link rel="stylesheet" href="css/navStyle.css" />
+    <link rel="stylesheet" href="css/semantic.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="css/themes/default/assets/fonts/icon.min.css"
+    />
+  </head>
+  <body>
+    <% include navbar %>
+    <div>
+      <div class="ui container">
+        <br />
+        <h1 class="text-center">INVENTARIS</h1>
+        <br />
+        <table class="ui celled table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama Barang</th>
+              <th>Jumlah Barang</th>
+              <th>Barang Tersedia</th>
+              <th>Barang Dipinjam</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% barang.forEach(function(obj_barang) { %> <% if
+            (obj_barang.sediaBerapa_barang > 0){ %>
+            <tr class="positive">
+              <td><%= obj_barang.id_barang %></td>
+              <td><%= obj_barang.nama_barang %></td>
+              <td><%= obj_barang.jumlah_barang %></td>
+              <td><%= obj_barang.sediaBerapa_barang %></td>
+              <td><%= obj_barang.pinjamBerapa_barang %></td>
+              <td>
+                <i class="icon checkmark"></i>
+                <%= obj_barang.status_barang %>
+              </td>
+            </tr>
+
+            <%} else {%>
+            <tr class="negative">
+              <td><%= obj_barang.id_barang %></td>
+              <td><%= obj_barang.nama_barang %></td>
+              <td><%= obj_barang.jumlah_barang %></td>
+              <td><%= obj_barang.sediaBerapa_barang %></td>
+              <td><%= obj_barang.pinjamBerapa_barang %></td>
+              <td>
+                <i class="icon x"></i>
+                <%= obj_barang.status_barang %>
+              </td>
+              <% } })%>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

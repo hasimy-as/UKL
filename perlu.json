@@ -1,0 +1,11 @@
+{
+  "perlu-inputan": {
+    "nama": "nama",
+    "kelas": "kelas",
+    "barang": "barang yang dipinjam",
+    "jmlh": "jumlah barang",
+    "waktu-pinjam": "waktu peminjaman",
+    "waktu-kembali": "waktu kembali",
+    "alasan": "alasan pinjem"
+  }
+}

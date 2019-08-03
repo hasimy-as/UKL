@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Peminjam | Admin Inventaris Sarpra MOKLET</title>
+  </head>
+  <body>
+    <% include adminnavbar %>
+
+    <div>
+      <div class="ui container">
+        <br />
+        <h1 class="text-center">Show DATA</h1>
+        <br />
+        <form method="get" action="hapus">
+          <a class="hidden ui button orange inverted" style="text-align: center" href="#">Terima Verifikasi</a>
+          <a class="hidden ui button orange inverted" style="text-align: center" href="#">Terima Verifikasi</a>
+          <a class="hidden ui button orange inverted" style="text-align: center" href="#">Terima Verifikasi</a>
+          <a class="hidden ui button orange inverted" style="text-align: center" href="#">Terima Verifikasi</a>
+          <a class="hidden ui button orange inverted" style="text-align: center" href="#">Terima Verifikasi</a>
+          <a class="hidden ui button orange inverted" style="text-align: center" href="#">Terima Verifikasi</a>
+          <a class="ui button orange inverted" style="text-align: center" href="#">Terima Verifikasi</a>
+        </form>
+        <table class="ui celled table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama Peminjam</th>
+              <th>Kelas Peminjam</th>
+              <th>Nama Barang</th>
+              <th>Jumlah Barang</th>
+              <th>Barang Tersedia</th>
+              <th>Barang Dipinjam</th>
+              <th>Status</th>
+              <th>Verifikasi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% print.forEach(function(data) { %>
+            <tr>
+              <td><%= data.id_peminjam %></td>
+              <td><%= data.nama_peminjam %></td>
+              <td><%= data.kls_peminjam %></td>
+              <td><%= data.nama_barang %></td>
+              <td><%= data.wkt_pinjam %></td>
+              <td><%= data.wkt_kembali %></td>
+              <td><%= data.alasan %></td>
+              <td><%= data.verifikasi %></td>
+              <form method="POST" action="tolak">
+                <td>
+                  <a class="ui button red inverted" href="/tolak/<%= data.id_peminjam %>">Tolak Verifikasi</a>
+                </form><br /><br />
+                <form method="POST" action="terima">
+                  <a class="ui button green inverted" href="/terima/<%= data.id_peminjam %>">Terima Verifikasi</a>
+                </td>
+              </form>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+        <br><br><br>
+      </div>
+    </div>
+  </body>
+</html>

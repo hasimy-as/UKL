@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/Universal/logo-ts.png"
+      sizes="96x96"
+    />
+    <title>Riwayat | Inventaris Sarpra MOKLET</title>
+  </head>
+  <body>
+    <% include navbar %>
+    <div>
+      <div class="ui container">
+        <br />
+        <h1 class="ui header text-center">Riwayat Peminjaman</h1>
+        <br />
+        <table class="ui red table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama Peminjam</th>
+              <th>Kelas Peminjam</th>
+              <th>Barang Dipinjam</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% rewayad.forEach(function(rewayad) { if (rewayad.verifikasi ===
+            "Terverifikasi"){ %>
+            <tr class="positive">
+              <td><%= rewayad.id_peminjam %></td>
+              <td><%= rewayad.nama_peminjam %></td>
+              <td><%= rewayad.kls_peminjam %></td>
+              <td><%= rewayad.nama_barang %></td>
+              <td style="display: flex;">
+                <a style="display: flex" class="ui green button">
+                  <i class="icon checkmark"></i>
+                  <%= rewayad.verifikasi %>
+                </a>
+              </td>
+            </tr>
+            <% } else if (rewayad.verifikasi === "Tertolak") { %>
+            <tr class="negative">
+              <td><%= rewayad.id_peminjam %></td>
+              <td><%= rewayad.nama_peminjam %></td>
+              <td><%= rewayad.kls_peminjam %></td>
+              <td><%= rewayad.nama_barang %></td>
+              <td style="display: flex;">
+                <a style="display: flex" class="ui red button">
+                  <i class="icon x"></i>
+                  <%= rewayad.verifikasi %>
+                </a>
+              </td>
+            </tr>
+            <% } else { %>
+            <tr class="gray">
+              <td><%= rewayad.id_peminjam %></td>
+              <td><%= rewayad.nama_peminjam %></td>
+              <td><%= rewayad.kls_peminjam %></td>
+              <td><%= rewayad.nama_barang %></td>
+              <td style="display: flex;">
+                <a style="display: flex" class="ui grey button">
+                  <i class="icon question circle"></i>
+                  <%= rewayad.verifikasi %>
+                </a>
+              </td>
+            </tr>
+            <% }}) %>
+          </tbody>
+        </table>
+        <br /><br /><br />
+      </div>
+    </div>
+  </body>
+</html>

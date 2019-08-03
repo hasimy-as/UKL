@@ -1,0 +1,34 @@
+{
+  "name": "ukl-tefa",
+  "version": "1.0.0",
+  "description": "Ini adalah projek kenaikan level SMK Telkom Malang, tentang website Inventaris Sarana dan Prasarana di sisi Admin, dan User.",
+  "main": "serverMain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon serverMain.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasimy-as/UKL.git"
+  },
+  "author": "Hasimy",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "semantic-ui-css": "^2.4.1"
+  },
+  "devDependencies": {
+    "alert-node": "^1.2.4",
+    "body-parser": "^1.19.0",
+    "ejs-lint": "^0.3.0",
+    "express-myconnection": "^1.0.4",
+    "jquery": "^3.4.1",
+    "semantic-ui-icon": "^2.3.3"
+  },
+  "bugs": {
+    "url": "https://github.com/hasimy-as/UKL/issues"
+  },
+  "homepage": "https://github.com/hasimy-as/UKL#readme"
+}
