@@ -6,7 +6,7 @@ UKL adalah projek Ujian Kenaikan Level [SMK Telkom Malang](https://smktelkom-mlg
 
 [![Lisensi GitHub](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/hasimy-as/UKL/master/LICENSE)
 [![Versi npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/)
-[![Status dependencies](https://img.shields.io/hackage-deps/v/lens.svg)](https://github.com/hasimy-as/UKL)
+
 
 ## Versi 1.0.0
 
