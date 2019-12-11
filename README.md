@@ -2,6 +2,8 @@
 
 UKL adalah projek Ujian Kenaikan Level [SMK Telkom Malang](https://smktelkom-mlg.sch.id/) yang diujikan kepada siswa-siswi SMK Telkom Malang dan dikategorikan ke kategori yang dipilih oleh guru mata pelajaran.
 
+Projek UKL Kelas X tahun 2018 ini adalah tentang aplikasi Inventaris Sarana dan Prasarana di sisi Admin maupun User.
+
 # Status Projek
 
 [![Lisensi GitHub](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/hasimy-as/UKL/master/LICENSE)
