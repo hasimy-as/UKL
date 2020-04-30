@@ -24,7 +24,7 @@
     "body-parser": "^1.19.0",
     "ejs-lint": "^0.3.0",
     "express-myconnection": "^1.0.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "semantic-ui-icon": "^2.3.3"
   },
   "bugs": {
