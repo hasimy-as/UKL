@@ -15,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-session": "^1.16.1",
     "semantic-ui-css": "^2.4.1"
   },
